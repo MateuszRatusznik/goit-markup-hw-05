@@ -445,6 +445,7 @@ figure, figcaption {
 .button { 
     font-weight: 500;
     font-size: 16px;
+    padding: 6px 22px;
     line-height: 1.625;
     letter-spacing: 0.03em;
     color: var(--four-color);
@@ -458,6 +459,10 @@ figure, figcaption {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+.button-list-item {
+
 }
 
 .button-list-item:not(:last-child) {
