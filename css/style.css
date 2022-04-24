@@ -599,7 +599,8 @@ figure, figcaption {
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-left: 24px; 
+    margin-left: 24px;
+    cursor: pointer;
 }
 
 .footer-form-icon {
@@ -767,5 +768,5 @@ figure, figcaption {
     margin-left: auto;
     margin-right: auto;
     border: none;
-
+    cursor: pointer;
 }
