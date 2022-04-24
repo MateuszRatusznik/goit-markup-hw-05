@@ -413,6 +413,11 @@ figure, figcaption {
 .footer-socials-text {
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
 .footer-socials-list {
@@ -549,18 +554,26 @@ figure, figcaption {
 
 /* ===== FOOTER SIGNUP FORM ===== */
 
+.footer-form-wrapper {
+    margin-top: 11px;
+    margin-left: 78px;
+}
+
+.footer-header {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-color);
+}
+
 .footer-form {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }
 
-.footer-signup {
-    top: 72px;
-}
-
-.footer-input {
-
+.footer-form-input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -584,10 +597,11 @@ figure, figcaption {
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
-    text-align: center;   
+    text-align: center;
+    margin-left: 24px; 
 }
 
-.button-icon {
+.footer-form-icon {
     margin-left: 24px;
 }
 
@@ -715,25 +729,24 @@ figure, figcaption {
     height: 16px;
     border: 2px solid #212121;
     border-radius: 2px;
-    z-index: 1;
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
     background-color: var(--secondary-color);
     border: none;
-    background-image: url('../images/Vector.svg');
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 2;
 }
 
 .visualy-hidden {
-    position: absolute;
-    /* clip: rect(1px, 1px, 1px, 1px; */
-    top: 447px;
-    left: 41px;
-    z-index: -1;
-    overflow: hidden;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.modal-form-link:visited {
+        text-decoration-color: none;
 }
 
 .modal-form-btn {

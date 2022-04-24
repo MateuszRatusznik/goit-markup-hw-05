@@ -398,22 +398,19 @@
             </li> 
           </ul>          
         </div> 
-        
-       
-          <form name="signup_form" autocomplete="on" novalidate>
-            <label class="footer-signup">
-              Zapisz się do newslettera
-              <div class="footer-form">
-              <input class="footer-input" type="email" name="email" placeholder="Email"/>
+
+        <div class="footer-form-wrapper">
+          <h4 class="footer-header">Zapisz się do newslettera</h4>
+          <form class="footer-form">
+            <label class="footer-form-field">
+              <input class="footer-form-input" type="email" name="newsletter-email" placeholder="E-mail">
             </label>
-            <button class="footer-button" type="submit">Zapisz się
-              <svg class="button-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
+            <button type="submit" class="footer-button">Zapisz się
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
             </button>
-          </div>
-          </form>        
-      </div>
+        </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -463,7 +460,7 @@
         </label>
           <input id="user_policy" type="checkbox" class="modal-form-policy visualy-hidden" name="user_policy" value="accept_policy">
         <label for="user_policy" class="modal-form-policy-text">
-          Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+          Oświadczam iż akceptuję <a class="modal-form-link" href="#">Regulamin</a> i <a class="modal-form-link" href="#">Politykę Prywatności.</a>
         </label>
         <button type="submit" class="modal-form-btn">Wyślij</button>
         </form>
